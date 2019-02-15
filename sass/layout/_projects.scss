@@ -1,0 +1,177 @@
+.project-box {
+    max-width: 130rem;
+    height: 50rem;
+    margin: 0 auto;
+    margin-bottom: 15rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    color: $color-grey-dark;
+
+    @media only screen and (max-width: $bp-med-large) {
+        padding: 0 5rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        flex-direction: column;
+        justify-content: center;
+        height: 80rem;
+        margin-bottom: 5rem;
+    }
+}
+
+.project-image{
+    position: relative;
+    height: 50rem;
+    width: 60rem;
+    perspective: 80rem;
+
+    @media only screen and (max-width: $bp-large) {
+            width: 55rem;
+            height: 37.5rem;
+        }
+
+    @media only screen and (max-width: $bp-medium) {
+            perspective: 0rem;
+            margin-bottom: 4rem;
+            width: 60rem;
+            
+        }
+
+    @media only screen and (max-width: $bp-small) {
+        height: 25rem;
+        width: 40rem;
+    }
+
+    img {
+        @media only screen and (max-width: $bp-large) {
+            width: 55rem;
+            height: 37.5rem;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 60rem;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            height: 25rem;
+            width: 40rem;
+        }
+    }
+}
+
+.project-image-3d {
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateY(15deg);
+    box-shadow: -2rem 3rem 4rem rgba(0,0,0,0.4);
+    margin-bottom: 20rem;
+
+    @media only screen and (max-width: $bp-medium) {
+            position: fixed;
+            transform-style: unset;
+            transform: none;
+            box-shadow: none;
+            margin-bottom: 4rem;
+        }
+    
+    img {
+        display: block;
+    }
+}
+
+.project-image-right{
+    position: relative;
+    height: 50rem;
+    width: 60rem;
+    perspective: 80rem;
+
+    @media only screen and (max-width: $bp-small) {
+        height: 25rem;
+        width: 40rem;
+    }
+    
+    img {
+        @media only screen and (max-width: $bp-large) {
+            width: 55rem;
+            height: 37.5rem;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 60rem;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            height: 25rem;
+            width: 40rem;
+        }
+    }
+}
+
+.project-image-3d-right {
+    position: absolute;
+    transform-style: preserve-3d;
+    transform: rotateY(-15deg);
+    box-shadow: 2rem 3rem 4rem rgba(0,0,0,0.4);
+    margin-bottom: 20rem;
+
+    @media only screen and (max-width: $bp-medium) {
+            position: relative;
+            transform-style: unset;
+            transform: none;
+            box-shadow: none;
+            margin-bottom: 4rem;
+        }
+
+    img {
+        display: block;
+    }
+}
+
+#dice-box{
+    @media only screen and (max-width: $bp-medium) {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+}
+
+.project-description {
+    width: 55rem;
+    h2 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        width: 70rem;
+        text-align: center;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        width: 40rem;
+    }
+}
+
+.project-techs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3rem;
+    
+    p {
+        background-color: $color-silver;
+        color: $color-mint;
+        margin-right: 1.5rem;
+        padding: .5rem 1rem;
+        border-radius: .5rem;
+        text-shadow: $color-silver-light 0px 0px 20px;
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 1.2rem;
+        }
+    }
+}

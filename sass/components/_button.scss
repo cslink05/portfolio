@@ -1,0 +1,85 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 10rem;
+        font-size: 2.6rem;
+        padding: 1rem 3rem;
+        margin-top: 3rem;
+        transition: all .3s;
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 1.6rem;
+        }
+    }
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($color-white, .2);
+    
+        &::after {
+            transform: scaleX(1.8) scaleY(1.4);
+            opacity: 0;
+        }
+    }
+
+    &:hover #mint {
+        color: $color-mint;
+    }
+
+    &--silver {
+        background-color: $color-silver;
+        color: #fff;
+
+        &::after {
+            background-color: $color-silver;
+            
+        }
+    }
+
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba($color-white,.2);
+    }
+}
+
+.project-links {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    a {
+        text-decoration: none;
+        border: .2rem solid $color-mint;
+        color: $color-mint;
+        padding: .5rem 2rem;
+        border-radius: 2.5rem;
+        font-weight: bold;
+        transition: all .1s linear;
+        box-shadow: 0 1rem 2rem rgba($color-grey-dark, .2);
+
+        &:hover {
+            background-color: $color-mint;
+            color: white;
+            box-shadow: 0 1rem 2rem rgba($color-grey-dark, .2);
+        }
+    }
+}

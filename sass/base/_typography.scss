@@ -1,0 +1,74 @@
+body {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-primary-dark;
+}
+
+.heading-primary {
+    color: $color-white;
+    text-shadow: 0 .5rem .8rem rgba(0,0,0,.8);
+
+    &--name {
+        display: block;
+        font-size: 8rem;
+        font-weight: 400;
+        letter-spacing: 1rem;
+        text-transform: uppercase;
+
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 5rem;
+            text-align: center;
+        }
+    }
+
+    &--lastname {
+        color: $color-mint;
+        
+    }
+    &--job {
+        display: block;
+        font-size: 4rem;
+        font-weight: 400;
+        letter-spacing: .8rem;
+        text-align: center;
+        
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 3rem;
+        }
+    }
+}
+
+.heading-secondary {
+    font-size: 8rem;
+    color: silver;
+    text-shadow: 0 .5rem .8rem rgba(0,0,0,.6);
+    font-weight: 400;
+    margin-bottom: 10rem;
+
+    @media only screen and (max-width: $bp-large) {
+        margin-bottom: 5rem;
+    }
+
+    @media only screen and (max-width: $bp-med-large) {
+        font-size: 6rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 5rem;
+    }
+
+    &--link {
+        color: $color-mint;
+    }
+}
+
+.myprofile {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+svg {
+    height: 6rem;
+    width: 6rem;
+}

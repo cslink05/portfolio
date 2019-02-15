@@ -1,0 +1,61 @@
+.section-about {
+    background-color: $color-grey;
+    padding: 0 15rem;
+    padding-bottom: 8rem;
+
+    @media only screen and (max-width: $bp-med-large) {
+        padding: 0 5rem;
+        padding-bottom: 3rem;
+        }
+
+    &__myface {
+        height: 25rem;
+        width: 25rem;
+        border-radius: 50%;
+        border: 10px solid $color-mint;
+        margin-bottom: 2rem;
+    }
+
+    &-bio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 50rem;
+
+        @media only screen and (max-width: $bp-medium) {
+        max-width: 80rem;
+        margin-bottom: 5rem;
+        }
+    }
+}
+
+.section-about-content {
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: $bp-medium) {
+        flex-direction: column;
+        align-items: center;
+        }
+}
+
+.section-about-contact {
+    margin-top: 8rem;
+    font-size: 1.6rem;
+    color: $color-grey-dark;
+    @media only screen and (max-width: $bp-medium) {
+        max-width: 30rem;
+    }
+}
+
+.contact-icons {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+
+    a:hover {
+        transform: translateY(-3px);
+    }
+}
+
+

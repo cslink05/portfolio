@@ -1,0 +1,53 @@
+.footer {
+    height: 20rem;
+    width: 100%;
+    background-color: $color-silver;
+    color: $color-white;
+    padding-top: 2.5rem;
+    
+
+
+    &__links{
+        margin: 0 auto;
+        width: 50rem;
+        display: flex;
+        justify-content: space-between;
+        
+
+        a {
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: $color-white;
+            transition: all .2s;
+            padding: 1rem 1.5rem;
+
+            &:hover,
+            &:active {
+            background-color: rgba(#fff, .05);
+            transform: translateY(-3px);
+            box-shadow: 0 1rem 2rem rgba($color-grey-dark, .2);
+        }
+        }
+
+        
+    }
+
+    &__copyright{
+        text-align: center;
+        font-size: 1.4rem;
+        padding-top: 1rem;
+    }
+
+    &__contact {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+        i {
+            padding: 0 2rem;
+            font-size: 6rem;
+            color: $color-white;
+        }
+    }
+}
