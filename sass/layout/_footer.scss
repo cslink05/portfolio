@@ -29,6 +29,10 @@
         }
         }
 
+        @media only screen and (max-width: $bp-medium) {
+        width: 30rem;
+    }
+
         
     }
 

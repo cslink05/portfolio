@@ -144,7 +144,11 @@ svg {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-content: space-around;
   margin: 0 auto; }
+  @media only screen and (max-width: 37.5em) {
+    .experience {
+      width: 25rem; } }
 
 .experience-box {
   width: 50rem;
@@ -153,7 +157,6 @@ svg {
   padding: 0 1.5rem;
   text-align: center;
   border-radius: 3px;
-  margin: 0 auto;
   margin-bottom: 4rem; }
   @media only screen and (max-width: 75em) {
     .experience-box {
@@ -161,6 +164,10 @@ svg {
   @media only screen and (max-width: 59.375em) {
     .experience-box {
       width: 50rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .experience-box {
+      width: 25rem;
+      font-size: 1.4rem; } }
   .experience-box__icon {
     font-size: 6rem;
     color: #5dc4bb; }
@@ -364,6 +371,9 @@ svg {
         background-color: rgba(255, 255, 255, 0.05);
         transform: translateY(-3px);
         box-shadow: 0 1rem 2rem rgba(51, 51, 51, 0.2); }
+    @media only screen and (max-width: 59.375em) {
+      .footer__links {
+        width: 30rem; } }
   .footer__copyright {
     text-align: center;
     font-size: 1.4rem;
